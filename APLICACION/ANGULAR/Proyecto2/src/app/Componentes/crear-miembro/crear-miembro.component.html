@@ -12,38 +12,38 @@
                                     <h4 class="mt-1 mb-5 pb-1">Bienvenido al Daily Bugle</h4>
                                 </div>
 
-                                <form>
-                                    <label class="form-label" for="form2Example11">Ingrese los datos necesarios</label>
-                                    <div class="form-outline mb-4">
-                                        <input type="email" id="nombreUsuario" class="form-control" placeholder="Nombre de Usuario" required formControlName="nombreUsuario" />
+                                <form [formGroup]="formularioCrearMiembro" (ngSubmit)="crearMiembro()">
+                                    <label class=" form-label " for="form2Example11 ">Ingrese los datos necesarios</label>
+                                    <div class="form-outline mb-4 ">
+                                        <input type="email " id="nombreUsuario " class="form-control " placeholder="Nombre de Usuario " required formControlName="nombreUsuario " />
 
                                     </div>
 
-                                    <div class="form-outline mb-4">
-                                        <input type="password" id="contraseña" class="form-control" placeholder="Contraseña" required formControlName="contraseña" />
+                                    <div class="form-outline mb-4 ">
+                                        <input type="password " id="contraseña " class="form-control " placeholder="Contraseña " required formControlName="contraseña " />
                                     </div>
-                                    <div class="form-outline mb-4">
-                                        <input type="password" id="confirmarContra" class="form-control" placeholder="Confirmar Contraseña" required formControlName="verificarContraseña" />
+                                    <div class="form-outline mb-4 ">
+                                        <input type="password " id="confirmarContra " class="form-control " placeholder="Confirmar Contraseña " required formControlName="verificarContraseña " />
                                     </div>
-                                    <div class="form-outline mb-4">
-                                        <select name="tipoMiembro" class="form-control" id="tipoUsuario" required formControlName="tipoUsuario">
+                                    <div class="form-outline mb-4 ">
+                                        <select name="tipoMiembro " class="form-control " id="tipoUsuario " required formControlName="tipoUsuario ">
                                             <option>Seleccione una opción...</option>
                                             <option>Editor</option>
                                         <option>Usuario</option>
                                     </select>
                                     </div>
-                                    <div class="text-center pt-1 mb-5 pb-1">
-                                        <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">Crear Cuenta</button>
+                                    <div class="text-center pt-1 mb-5 pb-1 ">
+                                        <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3 " type="button ">Crear Cuenta</button>
                                     </div>
 
                                 </form>
 
                             </div>
                         </div>
-                        <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
-                            <div class="text-white px-3 py-4 p-md-5 mx-md-4">
-                                <h4 class="mb-4">Somos más que revistas</h4>
-                                <p class="small mb-0">La lectura de una buena revistas es un diálogo incesante, en que la revista habla, y el alma contesta
+                        <div class="col-lg-6 d-flex align-items-center gradient-custom-2 ">
+                            <div class="text-white px-3 py-4 p-md-5 mx-md-4 ">
+                                <h4 class="mb-4 ">Somos más que revistas</h4>
+                                <p class="small mb-0 ">La lectura de una buena revistas es un diálogo incesante, en que la revista habla, y el alma contesta
                                 </p>
                             </div>
                         </div>

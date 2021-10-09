@@ -11,5 +11,7 @@ export class Miembro {
         this._capital = capital;
     }
 
+    
+
 
 }
